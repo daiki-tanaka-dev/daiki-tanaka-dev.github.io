@@ -1,7 +1,53 @@
 <!DOCTYPE html>
+<html lang="ja">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+
+
+    <title>プロフィール</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/chart.umd.js" defer></script>
+    <script src="./js/data.js" defer></script>
+    <script src="./js/main.js" defer></script>
 
 </head>
-<body> 
-    Hello
+<body>
+
+    <main class="container">
+    <p>システムエンジニア</p>
+    <h1 id="name">Daiki Tanaka</h1>
+    <p id="furigana">たなか だいき</p>
+
+    <h2>資格</h2>
+    <div class="card">
+    <p>Oracle Certified Java Programmer, Gold SE 8 合格</p>
+    </div>
+
+    <div class="card">
+    <p>基本情報技術者試験 合格</p>
+    </div>
+
+    <div class="card">
+    <p>学士 取得</p>
+    </div>
+
+    <p><a href="https://www.credly.com/users/daiki-tanaka.8594c706/badges#credly" target="_blank" rel="noopener noreferrer">Credly（デジタルバッチ）</a></p>
+
+
+    <h2>実務経験</h2>
+
+    <div class="card">
+    <p class="label">工程別内訳</p>
+    <p class="unit">（単位：ヶ月）</p>
+    <div><canvas id="chartProc" class="chart"></canvas></div>
+    <p id="sumProc"></p>
+    </div>
+
 </body>
+</html>
